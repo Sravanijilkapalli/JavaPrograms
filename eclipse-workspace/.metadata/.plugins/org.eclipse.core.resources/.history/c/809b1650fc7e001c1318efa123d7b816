@@ -1,0 +1,29 @@
+package com.map;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class MapDemo {
+	
+	public static void main(String[] args) {
+		
+		
+		Map<Integer , Character> hm = new HashMap<Integer , Character>();
+		
+		hm.put(1 , 'j');
+		hm.put(2 , 's');
+		hm.put(3 , 'r');
+
+		//System.out.println(hm);
+		
+		for(Entry<Integer, Character> a : hm.entrySet()) {
+			
+			System.out.println(a.getKey());
+			System.out.println(a.getValue());
+
+		}
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetDemo {
+	
+	public static void main(String[] args) {
+		
+		Set<String> hs = new HashSet<String>();
+		
+		hs.add("ramya");
+		hs.add("sai");
+		hs.add("ramya");
+
+		
+		System.out.println(hs);
+		
+	}
+
+}
