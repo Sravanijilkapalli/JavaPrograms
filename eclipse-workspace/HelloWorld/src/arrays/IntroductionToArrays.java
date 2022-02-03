@@ -112,7 +112,6 @@ public class IntroductionToArrays {
 		 ind(order , 12);
 		 anagram("srav" , "vras");
 		
-		 
 			}
 	
 	
