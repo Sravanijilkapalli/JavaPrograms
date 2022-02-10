@@ -9,4 +9,16 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<servlet-class>com.test.servelet.WelcomeServelet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<url-pattern>/welcome/showdate</url-pattern>
+  
+  </servlet-mapping>
+  
 </web-app>
