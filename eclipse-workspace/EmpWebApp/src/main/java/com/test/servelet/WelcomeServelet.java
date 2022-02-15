@@ -7,9 +7,9 @@ import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class WelcomeServelet extends HttpServlet {
 	
@@ -24,5 +24,9 @@ public class WelcomeServelet extends HttpServlet {
 	
 	}
 	
-
+	public WelcomeServelet() {
+		
+		System.out.println("Servelet object created ------");
+		
+	}
 }
