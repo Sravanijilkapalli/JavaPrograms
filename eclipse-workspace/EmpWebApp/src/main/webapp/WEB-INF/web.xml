@@ -29,4 +29,16 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login/validate</url-pattern>
   </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>AddServelet</servlet-name>
+    <servlet-class>com.test.servelet.AddServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddServelet</servlet-name>
+    <url-pattern>/Add/validate</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

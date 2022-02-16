@@ -1,6 +1,8 @@
 package com.test.servelet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,11 +33,20 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 	if(username.equals("user123") && password.equals("122345")) {
 		
 		//logic sucess
-		response.getWriter().println("Welcome to Home Page");
+		//response.getWriter().println("Welcome to Home Page");
+		//Goto landing resource
+		response.sendRedirect(request.getContextPath()+"/emplanding.jsp");
+
 	}else {
 		
 		//failure
-		response.getWriter().println("Username and password or incorrect...... please try again later.......");
+		//response.getWriter().println("Username and password or incorrect...... please try again later.......");
+		//Goto failure resource
+		request.setAttribute("errormsg", "Username and password or incorrect...... please try again later.......");
+		RequestDispatcher rd = request.getRequestDispatcher("/emplogin.jsp");
+		rd.forward(request, response);
+		//response.sendRedirect(request.getContextPath()+"/emplogin.jsp");
+
 	}
 	
 	System.out.println("Login - End()");
